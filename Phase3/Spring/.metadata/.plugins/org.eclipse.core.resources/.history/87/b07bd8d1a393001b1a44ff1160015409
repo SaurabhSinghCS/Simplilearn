@@ -1,0 +1,6 @@
+package org.simplilearn.workshop.service;
+
+public interface CustomerService {
+
+	public List<Customer> retrieveAllCustomers();
+}

@@ -1,0 +1,7 @@
+package org.simplilearn.workshop.events;
+
+import org.springframework.context.ApplicationListener;
+
+public class CustomerEventsProccessor implements ApplicationListener<E> {
+
+}

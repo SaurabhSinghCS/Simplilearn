@@ -1,0 +1,31 @@
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+@DisplayName("junit 5 standard test class example")
+public class StandardTest {
+
+	@BeforeAll
+	static void initAll() {
+		System.out.println("Before all the test methods");
+		
+	}
+	
+	@BeforeEach
+	void init() {
+		System.out.println("before each test method --> ");
+	}
+	
+	void succedingTest() {
+		System.out.println("succeding test");
+	}
+	
+	@Test
+	void failingTest() {
+		System.out.println("Failing Test");
+		fail("always test fails");
+	}
+}

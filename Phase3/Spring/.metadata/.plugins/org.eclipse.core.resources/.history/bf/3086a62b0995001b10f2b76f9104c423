@@ -1,0 +1,6 @@
+package org.simplilearn.workshop.repository;
+
+public class CustomerRepository {
+
+	public List<Customer> getCustomer();
+}

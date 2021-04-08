@@ -1,0 +1,11 @@
+package org.simplilearn.workshop.resources;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloworldResource {
+
+	//HTTP METHOD GET ( Browser URL / HyperLink ) http://localhost:8080/
+	@RequestMapping(path = "/", method = RequestMethod.Get)
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\projectsEclipse\Phase3\Spring\customer-tracker\pom.xml"/>
+			<item value="D:\projectsEclipse\Phase3\Spring\customer-service-rest-jpa-h2"/>
+			<item value="D:\projectsEclipse\Phase3\Spring\simple-spring-webapp\src"/>
+			<item value="D:\projectsEclipse\Phase3\Spring\customer-service-without-spring\src\main\java\org\simplilearn\workshop\Program.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="org.simplilearn.workshop"/>
+		</list>
+		<list key="name">
+			<item value="sporty-shoes"/>
+			<item value="Sporty-shoes"/>
+			<item value="junit5-maven"/>
+			<item value="customer-tracker"/>
+			<item value="simple-spring-webapp"/>
+			<item value="customer-service-spring-jdbc"/>
+			<item value="customer-service-spring-annotation-config"/>
+			<item value="customer-service-spring-java-config"/>
+			<item value="customer-service-spring-xml"/>
+			<item value="customer-service-without-spring"/>
+		</list>
+		<list key="artifactId">
+			<item value="sporty-shoes"/>
+			<item value="Sporty-shoes"/>
+			<item value="junit5-maven"/>
+			<item value="customer-tracker"/>
+			<item value="simple-spring-webapp"/>
+			<item value="customer-service-spring-jdbc"/>
+			<item value="customer-service-spring-annotation-config"/>
+			<item value="customer-service-spring-java-config"/>
+			<item value="customer-service-spring-xml"/>
+			<item value="customer-service-without-spring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="1.0-SNAPSHOT"/>
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

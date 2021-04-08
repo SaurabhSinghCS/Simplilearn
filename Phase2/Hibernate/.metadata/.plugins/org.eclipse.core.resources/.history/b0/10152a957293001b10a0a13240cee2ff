@@ -1,0 +1,20 @@
+package org.simplilearn.workshop;
+
+import org.hibernate.Session;
+import org.simplilearn.workshop.model.User;
+import org.simplilearn.workshop.utils.HibernateUtil;
+
+public class Program {
+
+	Session session = HibernateUtil.getSessionFactory().openSession();
+	
+	session.beginTransaction();
+	User user = new User();
+	user.setName("Saurabh Singh");
+	user.getProteinData().setGoal(250);
+	
+	session.save(user);
+	
+	session.setTransaction.commit();
+	session.close();
+}

@@ -1,0 +1,10 @@
+
+public class Calculator {
+
+	private int x;
+	private int y;
+	
+	int add(int x, int y) {
+		return x+y;
+	}
+}

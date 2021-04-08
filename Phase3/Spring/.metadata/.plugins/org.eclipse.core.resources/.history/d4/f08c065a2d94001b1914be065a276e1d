@@ -1,0 +1,22 @@
+package org.simplilearn.workshop.config;
+
+import org.simplilearn.workshop.repository.ListCustomerRepositoryImpl;
+import org.simplilearn.workshop.service.CustomerService;
+import org.simplilearn.workshop.service.CustomerServiceImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CustomerServiceConfig {
+
+	@Bean
+	public CustomerRepository customerRepository() {
+		return new ListCustomerRepositoryImpl();
+	}
+	
+	public CustomerService customerService() {
+		CustomerServiceImpl customerService = new CustomerServiceImpl();
+		customerService.setCustomerRepository(customerRepository());
+		return customerService;
+	}
+}

@@ -1,0 +1,13 @@
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+@DisplayName("junit 5 assertions example")
+public class AssertionsDemo {
+
+	@Test
+	public void assertTest() {
+		assertTrue(4 > 0);
+	}
+}

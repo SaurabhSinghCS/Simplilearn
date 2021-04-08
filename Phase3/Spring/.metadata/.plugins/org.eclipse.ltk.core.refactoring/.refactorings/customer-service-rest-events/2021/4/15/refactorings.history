@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ssl-server.jks&apos; to &apos;customer-service-rest-ssl/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;customer-service-rest-events&apos;&#x0D;&#x0A;- Destination element: &apos;customer-service-rest-ssl/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;ssl-server.jks&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=customer-service-rest-ssl/src\/main\/resources=/maven.pomderived=/true=/" element1="src/main/resources/ssl-server.jks" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1617682938602" units="0" version="1.0"/>
+</session>

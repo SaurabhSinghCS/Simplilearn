@@ -1,0 +1,29 @@
+package org.simplilearn.workshop.service;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class FileStorageService {
+
+	private Path fileStoragePath;
+	private String fileStorageLocation;
+	
+	public FileStorageService(@Value("${file.storage.location:temp}") String fileStorageLocation) {
+		super();
+		this.fileStorageLocation = fileStorageLocation;
+		fileStorageLocation = Paths.get(fileStorageLocation).toAbsolutePath().normalize();
+		
+		try {
+			Files.createDirectories(fileStoragePath);
+		}catch (IOException e) {
+
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

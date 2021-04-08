@@ -1,0 +1,31 @@
+package org.simplilearn.workshop.repository;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.simplilearn.workshop.model.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class JdbcCustomerRepositoryImpl implements CustomerRepository {
+
+	private static final String SELECT_ALL = "SELECT * FROM CUSTOMERS";
+	private DataSource dataSource;
+	
+	//spring jdbc provides a class by name jdbc Template
+	private JdbcTemplate jdbcTemplate;
+	
+	@Autowired
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+		this.jdbcTemplate = new JdbcTemplate(dataSource);
+	}
+	
+	@Override
+	public List<Customer> findAll() {
+		List<Customer> customers = jdbcTemplate.query(SELECT_ALL, new CustomerMapper())
+		return null;
+	}
+
+}

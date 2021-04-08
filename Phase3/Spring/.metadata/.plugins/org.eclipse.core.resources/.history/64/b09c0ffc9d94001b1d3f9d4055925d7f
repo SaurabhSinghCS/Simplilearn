@@ -1,0 +1,12 @@
+package org.simplilearn.workshop.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class SimpleController {
+
+	public ModelAndView helloWorld() {
+		ModelAndView model = new ModelAndView("showMessage"); // logical view name
+		
+		// store some data in model object
+	}
+}

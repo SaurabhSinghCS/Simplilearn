@@ -1,0 +1,24 @@
+package org.simplilearn.workshop.service;
+
+import java.util.List;
+
+import org.simplilearn.workshop.model.Customer;
+import org.simplilearn.workshop.repository.CustomerRepository;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	// declare a variable of customerrepository (property)
+	private CustomerRepository customerRepository;
+	
+	// defined a setter method
+	public void setCustomerRepository(CustomerRepository customerRepository) {
+		System.out.println("spring container as called setter method to inject customerRepository bean --->");
+		this.customerRepository = customerRepository;
+	}
+	
+	@Override
+	public List<Customer> retrieveAllCustomers() {
+		return customerRepository.findAll();
+	}
+
+}

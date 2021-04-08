@@ -1,0 +1,32 @@
+package org.simplilearn.workshop;
+
+import org.hibernate.Session;
+import org.simplilearn.workshop.domain.User;
+import org.simplilearn.workshop.util.HibernateUtil;
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("hibernate configuration setup initaited -->");
+		
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		System.out.println("Session was created successfully");
+		
+		session.beginTransaction();
+		System.out.println("Begin Hibernate Transaction");
+		
+		User user = new User();
+		user.setName("Saurabh Singh");
+		user.setGoal(250);
+		
+		session.save(user);
+		System.out.println("user is in persistent context");
+		
+		session.getTransaction().commit();
+		System.out.println("user is inserted in database..");
+		
+		session.close();
+		System.out.println("session is closed");
+		System.out.println("configuration was successfully completed");
+	}
+}

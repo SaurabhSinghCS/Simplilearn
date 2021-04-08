@@ -1,0 +1,5 @@
+package org.simplilearn.workshop.domain;
+
+public class User {
+
+}

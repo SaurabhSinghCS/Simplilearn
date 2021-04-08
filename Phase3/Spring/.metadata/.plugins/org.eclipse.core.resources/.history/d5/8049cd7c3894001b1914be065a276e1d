@@ -1,0 +1,18 @@
+package org.simplilearn.workshop.config;
+
+import org.simplilearn.workshop.repository.CustomerRepository;
+import org.simplilearn.workshop.repository.ListCustomerRepositoryImpl;
+import org.simplilearn.workshop.service.CustomerService;
+import org.simplilearn.workshop.service.CustomerServiceImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+
+@Configuration
+
+@ComponentScan(basePackages = "org.simplilearn.workshop.repository , org.simplilearn.workshop.service")
+public class CustomerServiceConfig {
+
+	
+}

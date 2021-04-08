@@ -1,0 +1,8 @@
+package org.simplilearn.workshop.model;
+
+public class Account {
+
+	private Integer accountId;
+	
+	private String accountNumber;
+}

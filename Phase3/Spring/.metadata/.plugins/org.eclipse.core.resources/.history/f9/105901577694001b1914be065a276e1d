@@ -1,0 +1,13 @@
+package org.simplilearn.workshop.config;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class InfraStructureConfig {
+
+	public DataSource dataSource() {
+		BasicDataSource dataSource = new BasicDataSource();
+	}
+}

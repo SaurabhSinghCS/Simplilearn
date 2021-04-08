@@ -1,0 +1,11 @@
+package org.simplilearn.workshop.events;
+
+import org.springframework.context.ApplicationListener;
+
+public class CustomerEventsProccessor implements ApplicationListener<E> {
+
+	@Override
+	public void onApplicationEvent(CustomerEvent event) {
+		System.out.println("Customer "+event.getEvent_type()+" with details : "+event.getCustomer());
+	}
+}

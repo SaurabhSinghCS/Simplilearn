@@ -1,0 +1,8 @@
+public class StandardTest {
+
+	@Test
+	void failingTest() {
+		System.out.println("Failing Test");
+		fail("always test fails");
+	}
+}

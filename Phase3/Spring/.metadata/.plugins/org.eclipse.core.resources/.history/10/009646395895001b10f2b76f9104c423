@@ -1,0 +1,29 @@
+package org.simplilearn.workshop.resources;
+
+import java.util.List;
+
+import org.simplilearn.workshop.model.Customer;
+import org.simplilearn.workshop.service.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CustomerResource {
+
+	@Autowired
+	private CustomerService customerService;
+	
+	//Get /customers
+	@GetMapping("/customers")
+	public List<Customer> retrieveAllCustomers(){
+		return customerService.getCustomers();
+	}
+	
+	// Get /customers/{theId}
+	@GetMapping(value = "/customers/{theId}")
+	public Customer retrieveCustomer(Integer id) {
+		System.out.println("id"+id);
+		return null;
+	}
+}

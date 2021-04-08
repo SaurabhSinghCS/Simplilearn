@@ -1,0 +1,13 @@
+package org.simplilearn.workshop.domain;
+
+public class User {
+	
+	private Integer id;
+	private String name;
+	private Integer total;
+	private Integer goal;
+	public User() {
+		super();
+	}
+
+}

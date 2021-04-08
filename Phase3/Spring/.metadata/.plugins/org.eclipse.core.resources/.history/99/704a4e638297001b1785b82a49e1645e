@@ -1,0 +1,15 @@
+package org.simplilearn.workshop.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ORDERS")
+public class OrderDetails {
+
+	private int id;
+	private int userId;
+	private int shoeId;
+	private String date;
+	
+}

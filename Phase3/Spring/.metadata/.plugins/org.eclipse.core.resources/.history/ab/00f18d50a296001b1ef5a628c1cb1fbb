@@ -1,0 +1,14 @@
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+@DisplayName("junit 5 standard test class example")
+public class StandardTest {
+
+	@Test
+	void failingTest() {
+		System.out.println("Failing Test");
+		fail("always test fails");
+	}
+}

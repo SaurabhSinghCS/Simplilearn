@@ -1,0 +1,7 @@
+package org.simplilearn.workshop.exceptions;
+
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+public class CustomisedResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+
+}

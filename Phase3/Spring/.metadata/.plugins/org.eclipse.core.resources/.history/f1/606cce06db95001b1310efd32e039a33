@@ -1,0 +1,8 @@
+package org.simplilearn.workshop.model;
+
+public class FileUploadResponse {
+
+	private String firstName;
+	private String contentType;
+	private String url;
+}

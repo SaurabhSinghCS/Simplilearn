@@ -1,0 +1,5 @@
+package org.simpllilearn.workshop.config;
+
+public class SecurityConfig {
+
+}

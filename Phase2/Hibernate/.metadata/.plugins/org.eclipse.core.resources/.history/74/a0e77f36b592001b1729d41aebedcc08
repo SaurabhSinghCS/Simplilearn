@@ -1,0 +1,65 @@
+package org.simplilearn.workshop.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+
+@Entity(name = "ForeignKeyAssoEntity")
+@Table(name = "EMPLOYEE", uniqueConstraints = {
+		@UniqueConstraint(columnNames = "ID"),@UniqueConstraint(columnNames = "EMAIL")
+})
+public class Employee {
+
+	private Integer id;
+	private String email;
+	private String firstName;
+	private String lastName;
+	
+	private set<Account> accounts;
+	
+	public Employee() {
+		super();
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public set<Account> getAccounts() {
+		return accounts;
+	}
+
+	public void setAccounts(set<Account> accounts) {
+		this.accounts = accounts;
+	}
+	
+	
+}

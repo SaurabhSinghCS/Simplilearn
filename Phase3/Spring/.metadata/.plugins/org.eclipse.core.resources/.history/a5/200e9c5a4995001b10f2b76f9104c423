@@ -1,0 +1,49 @@
+package org.simplilearn.workshop.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.simplilearn.workshop.model.Customer;
+
+public class CustomerRepositoryImpl implements CustomerRepository {
+
+	private static List<Customer> customers = new ArrayList<Customer>();
+	
+	static {
+		customers.add(new Customer(101, "Saurabh", "Singh", "saurabh@simplilearn.com"));
+		customers.add(new Customer(102, "Clarence", "tauro","clarence@simplilearn.com"));
+		customers.add(new Customer(103, "dennis", "gregory", "kavna@simplilearn.com"));
+	}
+	
+	@Override
+	public List<Customer> getCustomers() {
+		return customers;
+	}
+
+	@Override
+	public Customer saveCustomer(Customer theCustomer) {
+		if(theCustomer.getId() == null) {
+			theCustomer.setId(++customerCount);
+		}
+		customers.add(theCustomer);
+		return theCustomer;
+
+	}
+
+	@Override
+	public Customer getCustomer(Integer theId) {
+		for(Customer theCustomer : customers) {
+			if(theCustomer.getId() == theId) {
+				return theCustomer;
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public void deleteCustomer(Integer theId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

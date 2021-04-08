@@ -1,0 +1,17 @@
+package org.simplilearn.workshop.repository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.mysql.cj.xdevapi.SessionFactory;
+
+@Repository(value = "customerRepository")
+public class CustomerRepositoryImpl {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	public List<Customer> getCustomers() {
+		return null;
+	}
+}

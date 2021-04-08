@@ -1,0 +1,17 @@
+import java.util.Collection;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestFactory;
+
+public class DynamicTest {
+
+	// satic test
+	@Test
+	void test() {
+		Assertions.assertEquals(5,  Calculator.add(3,2));
+	}
+	
+	@TestFactory
+	Collection<Dynamic>
+}

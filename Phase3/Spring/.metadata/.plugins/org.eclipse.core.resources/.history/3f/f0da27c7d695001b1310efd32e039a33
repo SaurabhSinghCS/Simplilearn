@@ -1,0 +1,18 @@
+package org.simplilearn.workshop.service;
+
+import java.nio.file.Path;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class FileStorageService {
+
+	private Path fileStoragePath;
+	private String fileStorageLocation;
+	
+	public FileStorageService(@Value("${file.storage.location:temp}") String fileStorageLocation) {
+		super();
+		this.fileStorageLocation = fileStorageLocation;
+	}
+	
+	
+}
