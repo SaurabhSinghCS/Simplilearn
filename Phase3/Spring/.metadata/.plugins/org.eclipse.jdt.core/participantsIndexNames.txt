@@ -1,11 +1,9 @@
 INDEX VERSION 1.131
-D:\projectsEclipse\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2356985107.index
-\customer-tracker\src\main\java
-D:\projectsEclipse\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2638868774.index
+D:\EclipseEEProjects\Simplilearn\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\347577046.index
 \simple-spring-webapp\src\main\java
-D:\projectsEclipse\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1473226490.index
+D:\EclipseEEProjects\Simplilearn\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1473226490.index
 \customer-tracker\src\main\java
-D:\projectsEclipse\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\347577046.index
+D:\EclipseEEProjects\Simplilearn\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2638868774.index
 \simple-spring-webapp\src\main\java
-D:\projectsEclipse\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1169521396.index
-\sporty-shoes\src\main\java
+D:\EclipseEEProjects\Simplilearn\Phase3\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2356985107.index
+\customer-tracker\src\main\java
